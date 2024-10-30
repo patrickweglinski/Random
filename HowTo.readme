@@ -1,0 +1,11 @@
+Yes, you’ve got the right sequence! Here’s a quick breakdown of each step:
+
+    git status: Checks the status of your working directory and lets you see which files have been modified, added, or deleted.
+
+    git add .: Adds all modified and new files to the staging area, making them ready to be committed.
+
+    git commit -m "Your commit message": Commits the staged changes to your local repository. Make sure to include a descriptive commit message in the -m "message" part.
+
+    git push: Pushes your local commits to the remote repository on GitHub.
+
+Just make sure you’re in the correct branch before you start (use git branch to check or git switch branch-name to change branches). This sequence will update your GitHub repository with your latest changes!
