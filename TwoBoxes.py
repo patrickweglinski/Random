@@ -15,7 +15,7 @@ nLeft = n/2
 #lists for plotting
 tList = [0]*t
 nLeftList = [1]*t
-hist = [0] * len(nLeftList)
+hist = [0] * (n + 1)
 
 for i in range(t):
 
@@ -23,13 +23,14 @@ for i in range(t):
 
     if (int(random()*n)) < nLeft:
         nLeft-=1
-        # nLeftList[i] = nLeft
 
     else:
         nLeft+=1
-        # nLeftList[i] = nLeft
 
     nLeftList[i] = nLeft
+
+    hist[int(nLeft)] += 1
+
 
 # plt.plot(tList, nLeftList, marker="o", markersize=3,color="blue", linestyle="None")
 # plt.grid()
@@ -38,13 +39,11 @@ for i in range(t):
 # plt.ylabel("nleft amount")
 # plt.show()
 
-for i in range(len(nLeftList)):
-    hist[i] = nLeftList[i]
-
-plt.bar(nLeftList, hist)
-plt.title("NLeft molecules over time")
-plt.xlabel("time")
-plt.ylabel("nleft amount")
+plt.bar(range(len(hist)),hist,)
+plt.title("Amount of time Nleft value occured")
+plt.xlim(425,575)
+plt.xlabel("value")
+plt.ylabel("Amount of value occurences")
 plt.show()
 
 
