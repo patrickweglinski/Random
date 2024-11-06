@@ -6,17 +6,19 @@ import math
 import matplotlib.pyplot as plt
 
 t = 1
-timesteps = 10000
+timesteps = 1000
 position = 0
 walkplot = [0]*timesteps
 legend = []
 distance = [0]*t
+net = 0
+rms = 0
 
 # while t <= 1:
 
 walkplot[0] = position
 
-while t <= 20:
+while t < 20:
 
     position = 0
 
@@ -41,7 +43,13 @@ while t <= 20:
 
     t +=1
 
+    net += position**2
+
+rms = math.sqrt(net)/t
+print(rms)
+
 plt.show()
+
 
 
 
