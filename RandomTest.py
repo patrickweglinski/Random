@@ -1,9 +1,14 @@
 #RandomTest 10/30/24
 #By Patrick, Skyler, Jace
+#Visualizing the spread of randomly generated numbers
+
 from math import sqrt, exp, factorial, floor
 import random as r
 from random import random
 import matplotlib.pyplot as plt
+
+
+#Outputting lists of randomly generated numbers
 
 # for i in range(20):
 #     print(random())
@@ -13,6 +18,9 @@ import matplotlib.pyplot as plt
 
 # for i in range(50):
 #     print(int(10*random()))
+
+
+#displaying 1000 randomly generated coordinates on a grid.
 
 x = [0]*1000
 y = [0]*1000
