@@ -7,11 +7,12 @@ import matplotlib.pyplot as plt
 
 #amount of nuclei
 n = 10000
-time = 0
-nList = [1]*n
-time = []
+t = 0
+nList = []
 stop = n*.1
 decayed = 0
+
+# print("what")
 
 while n != stop:
 
@@ -22,14 +23,15 @@ while n != stop:
         if int(random.random()*1000) == 1:
 
             decayed += 1
-            nList[i] = 1
-            
+    
+    if t == 0:
+        print(decayed)
+
+    t+=1 
     n -= decayed
-        
+    nList.append(n)
 
-
-
-plt.plot(range(len(nList)),nList,marker="+", markersize=3)
+plt.plot(range(t),nList,marker="+", markersize=3)
 # plt.xlim(0,10E6)
 # plt.ylim(0,10E6) 
 plt.grid()
