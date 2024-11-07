@@ -5,11 +5,20 @@ import random
 import math 
 import matplotlib.pyplot as plt
 
+
+#This seems to be a little off
+
 #amount of nuclei
-n = 1000
+n = 10000
 timesteps = 100
 decayList = []
 decayed = 0
+
+print("runnning")
+
+#function to calculate Poisson Distribution
+def poisson():
+    pass
 
 for i in range(timesteps):
 
@@ -21,7 +30,7 @@ for i in range(timesteps):
 
             decayed += 1
 
-        decayList.append(decayed)
+    decayList.append(decayed)
 
 plt.bar(range(len(decayList)),decayList)
 plt.grid()
