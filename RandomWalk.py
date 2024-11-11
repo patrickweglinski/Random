@@ -45,7 +45,7 @@ while t < 20:
 
     net += position**2
 
-rms = math.sqrt(net)/t
+rms = math.sqrt(net)/math.sqrt(t)
 print(rms)
 
 plt.show()
