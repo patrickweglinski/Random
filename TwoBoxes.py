@@ -79,6 +79,8 @@ def probability(n,nLeft):
 #creating the lists for the our new plot, filling, and initializing them
 probabilityList = [0]*n
 
+#records how many are in the left bucket, increments, finds that probability for the amount now in the 
+#leftbucket and stores the probability in the probability list.
 leftbucket = 0
 
 for i in range(n):

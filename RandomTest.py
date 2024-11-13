@@ -8,6 +8,7 @@ import matplotlib.pyplot as plt
 
  
 #Outputting lists of randomly generated numbers
+#we were supposed to see if the generated lists go random 
 
 # for i in range(20):
 #     print(random())
