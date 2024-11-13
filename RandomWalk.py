@@ -1,6 +1,5 @@
 #RandomWalks 10/30/24
 #By Patrick, Skyler, Jace
-
 import random 
 import math 
 import matplotlib.pyplot as plt
@@ -11,10 +10,9 @@ position = 0
 walkplot = [0]*timesteps
 legend = []
 distance = [0]*t
+
 net = 0
 rms = 0
-
-# while t <= 1:
 
 walkplot[0] = position
 
@@ -35,11 +33,10 @@ while t < 20:
     legend.append(t)
         
     plt.plot(range(len(walkplot)),walkplot,marker="+", markersize=3)
-    plt.grid()
+    plt.grid() 
     plt.title("Random Walk")
     plt.xlabel("steps")
     plt.ylabel("distance away from origin")
-    # plt.legend(legend)
 
     t +=1
 

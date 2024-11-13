@@ -1,6 +1,5 @@
 #Decay 10/30/24
 #By Patrick, Skyler, Jace
-
 import random 
 import math 
 import matplotlib.pyplot as plt
@@ -32,8 +31,6 @@ while n != stop:
     nList.append(n)
 
 plt.plot(range(t),nList,marker="+", markersize=3)
-# plt.xlim(0,10E6)
-# plt.ylim(0,10E6) 
 plt.grid()
 plt.title("Nuclear Decay")
 plt.xlabel("time")

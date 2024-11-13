@@ -85,7 +85,6 @@ for i in range(n):
     probabilityList[i] = t*probability(n, leftbucket)
     leftbucket+=1
 
-
 #histogram plotted with the binomial distribution function output as a line imposed on the
 #histogram.
 plt.plot(range(len(probabilityList)),probabilityList,linestyle="solid", color="red")
