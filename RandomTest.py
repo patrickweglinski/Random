@@ -26,6 +26,7 @@ x = [0]*1000
 y = [0]*1000
 
 for i in range(1000):
+    #this returns and places in a  list a random number less than 10 and places it in the list
     x[i] = 10*random()
 
 for i in range(1000):

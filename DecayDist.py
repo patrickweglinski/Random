@@ -8,13 +8,16 @@ import matplotlib.pyplot as plt
 n = 10000
 trials = 10000
 
+#decayList holds how many decayed per arbitrary timestep, the poissonList holds the expected decay value
+#based on the poisson distribution
 decayList = [0]*n
 poissonList = []
 
 decayed = 0
 probability = .001
 
-#function to calculate Poisson Distribution
+#function to calculate Poisson Distribution for a given k and lambda, el is lambda because lambda is a 
+#protected value in Python and l looks like 1.
 def poisson(k, el):
     return((1/math.factorial(k))*(el**k)*(math.exp(-el)))
 
@@ -25,6 +28,7 @@ for i in range(trials):
 
     for i in range(n):
 
+        #given a random value, the molecule will decay
         if random.random() < probability:
 
             decayed += 1

@@ -50,20 +50,20 @@ for i in range(t):
 # plt.show()
 
 #these are our plotting ranges
-min = 0
-max = 0
+# min = 0
+# max = 0
 
 #using for loops to find where the bounds of the graph should be
-for i in range(len(hist)):
+# for i in range(len(hist)):
     
-    if hist[i] > 0:
-        min = i-1
-        break
+#     if hist[i] > 0:
+#         min = i-1
+#         break
 
-for i in range(len(hist)):
+# for i in range(len(hist)):
     
-    if hist[i] > 0:
-        max = i+1
+#     if hist[i] > 0:
+#         max = i+1
 
 # plt.bar(range(len(hist)),hist)
 # plt.title("Number of events Nleft value occured")
