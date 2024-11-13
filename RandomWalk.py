@@ -9,7 +9,6 @@ timesteps = 1000
 position = 0
 walkplot = [0]*timesteps
 legend = []
-distance = [0]*walkers
 
 #variables for the rms calculation 
 net = 0
@@ -36,7 +35,7 @@ while walkers < 20:
         walkplot[i+1] = position
 
     #appending a new timestep to the timestep list
-    legend.append(t)
+    legend.append(walkers)
         
     plt.plot(range(len(walkplot)),walkplot,marker="+", markersize=3)
     plt.grid() 
@@ -48,7 +47,7 @@ while walkers < 20:
     net += position**2
 
 #calculating the root means squared to find typical expected net distance from the origin
-rms = math.sqrt(net)/math.sqrt(t)
+rms = math.sqrt(net)/math.sqrt(walkers)
 print(rms)
 
 plt.show()
